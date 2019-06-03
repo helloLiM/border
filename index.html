@@ -4,78 +4,33 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .nav{
-            width: 600px;
-            margin: 0 auto;
-        }
-        .one{
-            background-color: #e9e7e7;
-            color: #000;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.3);
-        }
-        .one::after{
-            content: '';
+        .aside:after{
+             content: '';
             display: block;
             clear: both;
         }
-        .one>li{
+        .box1{
+            width: 200px;
+            background-color: red;
             float: left;
-            position: relative;
-            font-size: 22px;
-            
-            
+            height: 300px;
         }
-        .one li a{
-            color: #000;
-            display: block;
-            text-decoration: none;
-            padding: 10px;
-          
-            
+        .box3{
+            width: 200px;
+            background-color: blue;
+            float:right;
+            height: 300px;
         }
-        .one li a:hover{
-            color: #000;
-            background-color: #ccc;
-        }
-        .one .shaowing{
-            display: none;
-            color: #000;
-            background-color: ;
-            color: #000;;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            min-width: 160px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.3);
-        }
-        .one>li:hover .shaowing{
-            display: block;
+        .box2{
+            height: 500px;
+            background-color: pink;
+            margin: 0 210px;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <ul class="one">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">作品</a></li>
-            <li><a href="#">更多</a>
-                <ul class="shaowing">
-                    <li><a href="#">github</a></li>
-                    <li><a href="#">博客</a></li>
-                    <li><a href="#">知乎</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <div class="box1 aside">1</div>
+    <div class="box3 aside">3</div>
+    <div class="box2 main">2</div>
 </body>
 </html>
